@@ -32,6 +32,11 @@ namespace CodeMetaExtractor.ConsoleInteraction.Menus
                 ".mp4",
                 ".mkv",
                 ".avi",
+                ".doc",
+                ".docx",
+                ".xls",
+                ".xlsx",
+                ".txt",
             };
 
             AnsiConsole.Write(new Panel(new Columns(extensions.Select(x => $"[teal]{x}[/]")))
@@ -53,16 +58,17 @@ namespace CodeMetaExtractor.ConsoleInteraction.Menus
             {
                 Error = "File does not exist";
                 error = true;
+
+                return string.Empty;
             }
 
             if (!extensions.Contains(Path.GetExtension(path)))
             {
                 Error = "Extension not allowed";
                 error = true;
-            }
 
-            if (error)
                 return string.Empty;
+            }
 
             Error = string.Empty;
 

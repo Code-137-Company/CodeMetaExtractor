@@ -5,6 +5,11 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>CodeMetaExtractor</Title>
+    <Version>1.0.0</Version>
+    <Company>Code137</Company>
+    <Product>Meta Extractor</Product>
+    <Authors>Guilherme Marques</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CodeMetaExtractor.Domain\CodeMetaExtractor.Domain.csproj" />
+    <ProjectReference Include="..\CodeMetaExtractor.Service\CodeMetaExtractor.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,5 +5,6 @@
         None = 0,
         FilePath = 1,
         Extractor = 2,
+        ShowMetadata = 3,
     }
 }
